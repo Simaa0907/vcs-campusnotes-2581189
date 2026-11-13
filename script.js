@@ -59,16 +59,22 @@ let selectedSubject = "all";
 // DOM HELPER
 const $ = id => document.getElementById(id);
 
+// REUSABLE STORAGE HELPER
+function saveData(key, data) {
+    localStorage.setItem(key, JSON.stringify(data));
+}
+
+// SAVE DATA
 function saveNotes() {
-    localStorage.setItem(NOTES_KEY, JSON.stringify(notes));
+    saveData(NOTES_KEY, notes);
 }
 
 function saveTasks() {
-    localStorage.setItem(TASKS_KEY, JSON.stringify(tasks));
+    saveData(TASKS_KEY, tasks);
 }
 
 function saveProfile() {
-    localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+    saveData(PROFILE_KEY, profile);
 }
 
 function makeId() {
