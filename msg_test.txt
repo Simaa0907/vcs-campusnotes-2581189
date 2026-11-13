@@ -1,1 +1,2 @@
 Testing commit message hook
+Second commit message test
