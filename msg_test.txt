@@ -1,3 +1,0 @@
-Testing commit message hook
-Second commit message test
-Testing rejection again
